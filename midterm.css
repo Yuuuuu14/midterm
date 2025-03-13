@@ -8,18 +8,53 @@ body{
     background-color: wheat;
     width: fit-content;
     text-align: center;
+    margin: 0 auto;
 }
 .guide1{
-    padding: 1em;
-}
+        width: 250px;
+        margin: 20px;
+        display: inline-block;
+        position: relative;
+      }
+      
+
+.guide1 p{
+        position: absolute;
+        /* bottom: 5px; */
+        /* font-size: 15px; */
+        /* width: 280px; */
+        text-align: center;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .guide1 img {
+        width: 100%;
+        height: auto;
+        border: 10px solid cadetblue;
+        border-bottom-width: 50px;
+      }
 .guide2{
     padding: 1em;
 }
-.guide3{
-    padding: 1em;
-}
-
-.guideline .guide1{
-    justify-content: center;
-    align-items: center;
-}
+.guide3 {
+    width: 250px;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .guide3 img {
+    width: 100%;
+    height: auto;
+    border: 10px solid coral;
+    border-bottom-width: 50px;
+  }
+  .guide3 p{
+        position: absolute;
+        bottom: 5px;
+        font-size: 20px;
+        width: 280px;
+        text-align: center;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
