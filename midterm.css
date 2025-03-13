@@ -1,11 +1,10 @@
 body{
     background-color: bisque;
 }
-h1 {
-    align-items: center;
-    justify-items: center;
-}
 .guideline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: wheat;
     width: fit-content;
     text-align: center;
@@ -18,4 +17,9 @@ h1 {
 }
 .guide3{
     padding: 1em;
+}
+
+.guideline .guide1{
+    justify-content: center;
+    align-items: center;
 }
