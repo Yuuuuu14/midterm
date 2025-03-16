@@ -17,6 +17,7 @@ body {
   }
   .guide1 img{
     width: 20em;
+    height: auto;
   }
  .guide1:hover {
     transform: scale(1.2);
@@ -42,6 +43,7 @@ body {
   }
   .guide3 img{
     width: 20em;
+    height: auto;
   }
   .guide3:hover {
     transform: scale(1.2);
