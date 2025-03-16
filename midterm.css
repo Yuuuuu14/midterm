@@ -1,60 +1,49 @@
-body{
+body {
     background-color: bisque;
-}
-.guideline {
+  }
+  .guideline {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: wheat;
     width: fit-content;
     text-align: center;
     margin: 0 auto;
-}
-.guide1{
-        width: 250px;
-        margin: 20px;
-        display: inline-block;
-        position: relative;
-      }
-      
-
-.guide1 p{
-        position: absolute;
-        /* bottom: 5px; */
-        /* font-size: 15px; */
-        /* width: 280px; */
-        text-align: center;
-        color: black;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      }
-      .guide1 img {
-        width: 100%;
-        height: auto;
-        border: 10px solid cadetblue;
-        border-bottom-width: 50px;
-      }
-.guide2{
-    padding: 1em;
-}
-.guide3 {
-    width: 250px;
-    margin: 20px;
-    display: inline-block;
-    position: relative;
   }
   
-  .guide3 img {
-    width: 100%;
-    height: auto;
-    border: 10px solid coral;
-    border-bottom-width: 50px;
+  
+  .guide1 {
+    background-color: tomato;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
-  .guide3 p{
-        position: absolute;
-        bottom: 5px;
-        font-size: 20px;
-        width: 280px;
-        text-align: center;
-        color: black;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  .guide1 img{
+    width: 20em;
+  }
+ .guide1:hover {
+    transform: scale(1.2);
+    transition: 2s;
+  }
+  
+     
+.guide2{
+    background-color: khaki;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.guide2 img{
+    width: 20em;
+    height: auto;
+}
+.guide2:hover {
+    transform: scale(1.2);
+    transition: 2s;
+  }
+.guide3 {
+    background-color: coral;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .guide3 img{
+    width: 20em;
+  }
+  .guide3:hover {
+    transform: scale(1.2);
+    transition: 2s;
   }
