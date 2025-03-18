@@ -35,6 +35,22 @@
         h1 {
             align-items: center;
         }
+        .eat{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                
+            }
+            button{
+                cursor: pointer;
+                width: 200px;
+                border-width: 6px;
+                box-shadow: 12px 12px 2px 1px transparent rgba(2, 2, 36, 0.2);
+                margin-top: 10px; 
+                margin-bottom: 10px;  
+            }
         </style>
     </head>
     <body>
@@ -44,13 +60,20 @@
             <li><a href="/midterm/about/eat.html">Eat</a></li>
             <li><a href="/midterm/about/when.html">When</a></li>
           </ul>
-        <div class="eat">
-        <button type="button">
-            <h1><a href="/midterm/about/breakfast.html">breakfast</a></h1></button>
-        <button type="button">
-            <h1><a href="/midterm/about/lunch.html">lunch</a></h1></button>
-        <button type="button">
-            <h1><a href="/midterm/about/dinner.html">dinner</a></h1></button>
-        </div>
+          <div class="eat">
+            <a href="/midterm/about/breakfast.html"><button type="button">
+              <h1 align="center">BREAKFAST</h1>
+
+           </button>
+           <a href="/midterm/about/lunch.html"><button type="button">
+            <h1 align="center">LUNCH</h1>
+
+         </button>
+         <a href="/midterm/about/dinner.html"><button type="button">
+            <h1 align="center">DINNER</h1>
+
+         </button>
+       </a>
+       </div>
     </body>
 </html>
