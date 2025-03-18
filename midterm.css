@@ -1,5 +1,30 @@
 body {
     background-color: bisque;
+    padding-top: 50px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(252, 205, 200);
+    position: fixed;
+    top: 0;
+    width: 100%;
+left: 0;
+  }
+  
+  li {
+    float:right;
+  }
+  
+  li a {
+    display: block;
+    padding: 10px;
+  }
+
+  li a:hover {
+    background-color: salmon;
   }
   .guideline {
     display: flex;

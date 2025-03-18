@@ -3,7 +3,29 @@
         <style>
             body{
                 background-color: sandybrown;
+                padding-top: 50px;
             }
+            ul {
+                 list-style-type: none;
+                 margin: 0;
+                 padding: 0;
+                 overflow: hidden;
+                 background-color: rgb(252, 205, 200);
+                 position: fixed;
+                 top: 0;
+                 width: 100%;
+                 left: 0;
+                }
+                li {
+                    float:right;
+                }
+                li a {
+                    display: block;
+                    padding: 10px;
+                }
+                li a:hover {
+                    background-color: salmon;
+                }
             .click{
                 display: flex;
                 justify-content: center;
@@ -14,6 +36,12 @@
         </style>
     </head>
     <body>
+        <ul>
+            <li><a class="active" href="/midterm/index.html">Home</a></li>
+            <li><a href="/midterm/about/do.html">Do</a></li>
+            <li><a href="/midterm/about/eat.html">Eat</a></li>
+            <li><a href="/midterm/about/when.html">When</a></li>
+          </ul>
         <H1 align="center">When to do the thing in your mind</H1>
         <div class="click">
             <button type="button">
