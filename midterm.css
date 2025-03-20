@@ -27,7 +27,7 @@ left: 0;
     background-color: salmon;
   }
   h1,h2,h3,p{
-    font-family:cursive;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   .guideline {
     display: flex;
@@ -41,7 +41,6 @@ left: 0;
   
   .guide1 {
     background-color: tomato;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   .guide1 img{
     width: 20em;
@@ -55,7 +54,6 @@ left: 0;
      
 .guide2{
     background-color: khaki;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .guide2 img{
     width: 20em;
@@ -67,7 +65,6 @@ left: 0;
   }
 .guide3 {
     background-color: coral;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   .guide3 img{
     width: 20em;
@@ -78,7 +75,7 @@ left: 0;
     transition: 2s;
   }
   p{
-    font: bold;;
+    font: bold;
   }
   .whatelse{
     padding-top: 50px;
