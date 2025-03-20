@@ -26,6 +26,9 @@ left: 0;
   li a:hover {
     background-color: salmon;
   }
+  h1,h2,h3,p{
+    font-family:cursive;
+  }
   .guideline {
     display: flex;
     justify-content: space-around;
@@ -73,4 +76,20 @@ left: 0;
   .guide3:hover {
     transform: scale(1.2);
     transition: 2s;
+  }
+  p{
+    font: bold;;
+  }
+  .whatelse{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  button{
+    font-size: 30pt;
+    cursor: pointer;
+    background-color:rgb(255, 193, 210);
+    font-family: cursive;
   }
