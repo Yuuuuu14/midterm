@@ -2,11 +2,13 @@
     <head>
         <style>
             body {
-                background-color: lightblue;
+                background-color: #E6AF9A;
                 /* font-family: Arial, sans-serif; */
                 /* margin: 0; */
                 padding-top: 50px;
             }
+
+            /* guideline */
             ul {
                  list-style-type: none;
                  margin: 0;
@@ -26,8 +28,10 @@
                     padding: 10px;
                 }
                 li a:hover {
-                    background-color:lightblue;
+                    background-color:#E6AF9A;
                 }
+            /* guideline */
+
             h1 {
                 text-align: center;
                 justify-content: center;
@@ -55,13 +59,35 @@
             <li><a href="/midterm/about/eat.html">Eat</a></li>
             <li><a href="/midterm/about/when.html">When</a></li>
           </ul>
+
         <h1>What to do next?</h1>
         <div class="click">
              <a href="/midterm/about/dowhat.html"><button type="button">
                <h1 align="center">CLICK</h1>
-
             </button>
         </a>
         </div>
+
+        <label>type in what to what to eat and use , to seperate</label><br><br>
+  <input type="text" id="userInput" placeholder="for example: apple, banana, orange">
+  <button onclick="pickRandom()">random selection</button>
+
+  <div class="result" id="resultBox"></div>
+
+  <script>
+    function pickRandom() {
+      const input = document.getElementById("userInput").value;
+      const options = input.split(',').map(s => s.trim()).filter(s => s !== "");
+
+      if (options.length === 0) {
+        document.getElementById("resultBox").textContent = "please at least type in one option";
+        return;
+      }
+
+      const randomChoice = options[Math.floor(Math.random() * options.length)];
+      document.getElementById("resultBox").textContent = "the random result is: " + randomChoice;
+    }
+  </script>
+
     </body>
 </html>
