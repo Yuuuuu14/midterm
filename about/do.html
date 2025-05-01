@@ -36,28 +36,36 @@
                 }
             /* guideline */
 
-            h1 {
-                text-align: center;
-                justify-content: center;
+            /* typewriting effect */
+            .typewriting-wrapper {
+            width: 100%;
+            text-align: center; 
+            padding-top: 90px;
             }
-            .click{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                width: 100%;
-                
+            .typewriting {
+                display: inline-block; 
+                font-family: 'Courier New', monospace;
+                font-size: 38px;
+                font-weight: bold;
+                white-space: nowrap;
+                overflow: hidden;
+                border-right: 2px solid black;
+
+                width: 0;
+                animation: typing 3s steps(17) forwards, blink 0.7s step-end infinite;
             }
+            @keyframes typing {
+            from { width: 0 }
+            to { width: 17ch } 
+            }
+
+            @keyframes blink {
+            50% { border-color: transparent; }
+            }
+            /* end of typewriting effect */
+
             button{
-                cursor: pointer;
-                width: 9.5em;
-                align-items:flex-end;
-            }
-            h1{
-                font-family:cursive;
-            }
-            h2{
-                font-family:;
+                width:150px;
             }
             label{
                 font-size: 15px;
@@ -72,21 +80,23 @@
                 flex-direction: column;
                 height:auto;
                 width:50%;
-                padding:70px;
+                padding-left:60px;
+                padding-top: 20px;
             }
             .right{
                 display:flex;
                 width:50%;
-                padding:70px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-top: 20px;
                 flex-direction: column;
-                /* width:fit-content; */
             }
             .rightresult {
                 font-size: 30px;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 text-align: center;
                 margin-top: 20px;
-                padding: 10px;
+                padding-bottom: 170px;
                 border-radius: 5px;
             }
             img{
@@ -102,8 +112,10 @@
             <li><a href="/midterm/about/when.html">When</a></li>
           </ul>
 
-        <!-- <h1>What to do next?</h1>
-        <div class="click">
+        <div class="typewriting-wrapper">
+            <div class="typewriting">What to do next?</div>
+        </div>
+        <!-- <div class="click">
              <a href="/midterm/about/dowhat.html"><button type="button">
                <h1 align="center">CLICK</h1>
             </button>
@@ -126,7 +138,7 @@
             <p>press and throw the coin~</p>
             <img id="coin-button" src="https://th.bing.com/th/id/R.ffbb1d5641c4ac81e451f4b9354e895f?rik=WKULPGX%2bLtxjtQ&riu=http%3a%2f%2fzms-uploads.oss-cn-qingdao.aliyuncs.com%2f2013%2f06%2f727440b5jw1f3hyfy0mijg209o05g000.gif&ehk=Ka03y63WsIXD6C7w1uPp1KgTaPPmAotySedI5z1m85U%3d&risl=&pid=ImgRaw&r=0"/>
         
-            <div class="rightresult" id="result">throw the coin</div>
+            <div class="rightresult" id="result">Throw the coin</div>
 
         </div>
        
@@ -151,7 +163,7 @@
         // end of left
 
         // right
-            const database = ["Reading📕", "Writing✍", "Movie🎦", "Games🎮","Swimming🏊","badminton🏸","jogging🏃","shopping🛒","hanging out with friends👬👭👫","sleep💤","coding(just kidding lol)","bath🛀","eat🍴"];
+            const database = ["Reading📕", "Writing✍", "Movie🎦", "Games🎮","Swimming🏊","Badminton🏸","Jogging🏃","Shopping🛒","Hanging out with friends👬👭👫","Sleep💤","Coding(just kidding lol)","Bath🛀","Eat🍴"];
             const button = document.getElementById('coin-button');
             const resultDiv = document.getElementById('result');
             button.addEventListener('click', () => {
